@@ -1,9 +1,8 @@
 title: Stupid compiler tricks
 email: dberlin@dberlin.org
-baseurl: ""
-theme: jekyll-theme-midnight
 highlighter: pygments
 markdown: kramdown
 github_username: dberlin
-url: "http://blog.stupidcompilertricks.com"
+url: "http://stupidcompilertricks.com"
+baseurl: ""
 

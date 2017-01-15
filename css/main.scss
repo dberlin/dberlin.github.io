@@ -1,0 +1,116 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: Georgia, Arial, sans-serif;
+$base-font-size:   18px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 2.0;
+$code-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #444;
+$background-color: #ffffff;
+$brand-color:      #101F7C;
+$h1-color:         #101F7C;
+$h2-color:         #2E3D00;
+$strong-color:     #444;
+$code-border-color: #101F7C;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$grey-primary-color:  #8B2323;
+$white-primary-color: #efefff;
+$very-light-primary-color: #fdfdff;
+
+$very-light-secondary-color: #ffffff;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+
+// Sharing buttons.
+
+.resp-sharing-button {
+  display: inline-block;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  transition: background-color 25ms ease-out, border-color 25ms ease-out, opacity 250ms ease-out;
+  margin: 0.5em;
+  padding: 0.5em 0.75em;
+  font-family: Georgia;
+}
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: #FFF;
+
+  &:visited {
+      color: #FFF;
+  }
+
+  &:hover {
+      text-decoration: none;
+      color: #FFF;
+  }
+}
+
+.resp-sharing-button--twitter {
+  background-color: #55acee;
+  border-color: #459cde;
+}
+
+.resp-sharing-button--twitter:hover {
+  background-color: #358cce;
+  background-color: #257cbe;
+}
+
+.resp-sharing-button--email {
+  background-color: #444444;
+  border-color: #343434;
+}
+
+.resp-sharing-button--email:hover {
+  background-color: #222222;
+  border-color: #121212;
+}
+
+.resp-sharing-button--hn {
+  background-color: #ff6600;
+  border-color: #ef5600;
+}
+
+.resp-sharing-button--hn:hover {
+  background-color: #ee5500;
+  border-color: #de4500;
+}
