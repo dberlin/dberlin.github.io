@@ -5,4 +5,5 @@ theme: jekyll-theme-midnight
 highlighter: pygments
 markdown: kramdown
 github_username: dberlin
+url: "http://blog.stupidcompilertricks.com"
 
