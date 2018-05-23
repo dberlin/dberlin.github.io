@@ -1,6 +1,6 @@
 title: Stupid compiler tricks
 email: dberlin@dberlin.org
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 github_username: dberlin
 url: "http://stupidcompilertricks.com"
